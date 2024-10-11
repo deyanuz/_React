@@ -6,6 +6,8 @@
   --secondary: #2d2318;
   --tertiary: #ffff00;
   --tertiary-hover: #ffff0071;
+  --darken: rgb(0, 0, 0, 0.2);
+  --base-border: 2px solid;
 }
 body {
   margin: 0;
@@ -61,11 +63,88 @@ main {
   margin: 40px auto;
 }
 /* help layout */
+.help-layout nav,
+.help-layout h2,
+.help-layout .help-sub-title {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
 
+.help-layout nav a {
+  padding: 10px;
+  border: 3px solid var(--primary);
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+.help-layout nav a:hover {
+  background: var(--primary-hover);
+  color: var(--tertiary-hover);
+  transition: 0.5s ease;
+}
+.help-layout nav a.active {
+  background: var(--primary);
+  color: var(--tertiary);
+  border: 3px solid var(--tertiary);
+}
 /* faq */
-
+.faq .questions {
+  background: var(--darken);
+  padding: 5px 20px;
+  border-radius: 0.5rem;
+  margin: 20px 5px;
+}
+/* contact form */
+form {
+  margin-top: 30px;
+}
+form input,
+form label span,
+form textarea {
+  display: block;
+}
+form input,
+form textarea {
+  margin-bottom: 30px;
+  padding: 8px;
+  border-radius: 0.5rem;
+  border: 0;
+  width: 100%;
+  color: var(--primary);
+}
+form textarea {
+  height: 5rem;
+}
+form label span {
+  margin-bottom: 10px;
+}
 /* careers list */
-
+.careers > a {
+  display: block;
+  background-color: var(--darken);
+  padding: 20px;
+  border-radius: 0.75rem;
+  margin: 20px 0;
+  text-decoration: none;
+  border: var(--base-border) var(--primary);
+  border-radius: 0.75rem;
+  transition: 0.2s ease-in;
+}
+.careers > a:hover {
+  border: var(--base-border) var(--tertiary);
+  border-radius: 0.75rem;
+}
+.careers > a:hover p {
+  color: var(--primary);
+}
+.careers p {
+  margin: 5px;
+}
+.careers > a p:last-child {
+  font-size: 0.8rem;
+  color: #bbb;
+}
 /* careers details */
 
 /* breadcrumbs */
