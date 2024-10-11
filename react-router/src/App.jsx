@@ -13,6 +13,7 @@ import FAQ from "./Pages/Help/FAQ";
 import NotFound from "./Pages/NotFound";
 import CareerLayout from "./Layouts/CareerLayout";
 import Careers, { loader } from "./Pages/careers/careers";
+import CareerDetails, { careerLoader } from "./Pages/Careers/CareerDetails";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -32,7 +33,10 @@ const router = createBrowserRouter(
         <Route path="contact" element={<Contact />}></Route>
       </Route>
       <Route path="careers" element={<CareerLayout />}>
+        {/*loader function */}
         <Route index element={<Careers />} loader={loader}></Route>
+        {/*changable parameter route */}
+        <Route path=":id" element={<CareerDetails />} loader={careerLoader} />
       </Route>
       <Route path="*" element={<NotFound />}></Route>
     </Route>

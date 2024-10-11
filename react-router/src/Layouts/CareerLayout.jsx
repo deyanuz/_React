@@ -4,7 +4,7 @@ export default function CareerLayout() {
   return (
     <div className="career-layout">
       <h2>Careers</h2>
-      <p>
+      <p className="career-layout-sub-title">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
         distinctio.
       </p>

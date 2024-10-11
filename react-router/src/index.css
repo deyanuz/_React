@@ -65,7 +65,9 @@ main {
 /* help layout */
 .help-layout nav,
 .help-layout h2,
-.help-layout .help-sub-title {
+.help-layout .help-sub-title,
+.career-layout > h2,
+.career-layout .career-layout-sub-title {
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -146,5 +148,13 @@ form label span {
   color: #bbb;
 }
 /* careers details */
-
+.career-details {
+  background: var(--darken);
+  padding: 20px;
+  border-radius: 0.5rem;
+  margin: 20px 0;
+  width: fit-content;
+  border: var(--base-border) var(--primary);
+  border-radius: 0.75rem;
+}
 /* breadcrumbs */

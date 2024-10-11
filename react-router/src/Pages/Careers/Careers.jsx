@@ -24,7 +24,7 @@ export default function Careers() {
       in paranthesis to implicitly return the element. Using 
       braces require explicit return statement */}
       {careerList.map((career) => (
-        <Link to="/" key={career.id}>
+        <Link to={career.id.toString()} key={career.id}>
           <p>{career.title}</p>
           <p>Based in {career.location}</p>
         </Link>
