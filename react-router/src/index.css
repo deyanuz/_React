@@ -2,8 +2,10 @@
 
 :root {
   --primary: #9d23bc;
+  --primary-hover: #9d23bc8f;
   --secondary: #2d2318;
   --tertiary: #ffff00;
+  --tertiary-hover: #ffff0071;
 }
 body {
   margin: 0;
@@ -42,11 +44,11 @@ header nav h1 {
 header nav a {
   text-decoration: none;
   padding: 6px;
-  border-radius: 0.6rem;
+  border-radius: 0.5rem;
 }
 header nav a:hover {
-  background: var(--primary);
-  color: var(--tertiary);
+  background: var(--primary-hover);
+  color: var(--tertiary-hover);
   transition: 0.5s ease;
 }
 header nav a.active {
@@ -54,7 +56,10 @@ header nav a.active {
   color: var(--tertiary);
 }
 /* page content */
-
+main {
+  max-width: fit-content;
+  margin: 40px auto;
+}
 /* help layout */
 
 /* faq */
