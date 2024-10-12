@@ -5,6 +5,10 @@ import { useLoaderData, useParams } from "react-router-dom";
 export const careerLoader = async ({ params }) => {
   const { id } = params;
   const res = await fetch("http://localhost:4000/careers/" + id);
+  // chaeck if response is OK
+  if (!res.ok) {
+    throw Error("Could not find that career");
+  }
   return res.json();
 };
 

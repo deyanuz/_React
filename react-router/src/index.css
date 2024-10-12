@@ -157,4 +157,30 @@ form label span {
   border: var(--base-border) var(--primary);
   border-radius: 0.75rem;
 }
+/*error page*/
+.career-error {
+  text-align: left;
+}
 /* breadcrumbs */
+.breadcrumbs {
+  max-width: fit-content;
+  margin: 20px 0;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumbs:after {
+  content: ">";
+  margin-left: 10px;
+}
+.breadcrumbs .crumbs:last-child:after {
+  display: none;
+}
+.breadcrumbs .crumbs a {
+  color: #ddd;
+  text-decoration: none;
+}
+.breadcrumbs .crumbs a:hover {
+  color: var(--tertiary-hover);
+}
