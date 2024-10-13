@@ -1,16 +1,15 @@
-import UseRefExample from "./UseRefExample.jsx"
-import StopWatch from "./StopWatch.jsx"
-import DigitalClock from "./DigitalClock.jsx"
+import UseRefExample from "./UseRefExample.jsx";
+import StopWatch from "./StopWatch.jsx";
+import DigitalClock from "./DigitalClock.jsx";
 
 function App() {
-
-  return(
+  return (
     <>
-      {/* <UseRefExample/> */}
-      <StopWatch/>
-      <DigitalClock/>
+      {/* <UseRefExample/> 
+       <StopWatch/>
+      <DigitalClock/> */}
     </>
-  )
+  );
 }
 
-export default App
+export default App;
